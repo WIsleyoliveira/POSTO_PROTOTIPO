@@ -1,0 +1,10 @@
+{
+  "name": "rede-vr-fuel",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Monorepo: frontend (Vite, build estático) + api (função serverless que expõe o Express do backend)",
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  }
+}

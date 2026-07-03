@@ -1,0 +1,26 @@
+# TODO - Rede VR Fuel (Frontend + Backend do zero)
+
+- [ ] Criar estrutura do projeto: `backend/` e `public/`
+- [ ] Criar backend Node.js + Express com CORS e rotas REST:
+  - [ ] GET /api/dashboard
+  - [ ] GET /api/prices
+  - [ ] GET /api/tanks
+  - [ ] GET /api/purchases
+  - [ ] GET /api/pumps
+  - [ ] GET /api/store
+  - [ ] GET /api/stock
+  - [ ] GET /api/maintenance
+  - [ ] GET /api/financial
+  - [ ] GET /api/employees
+  - [ ] GET /api/simulator (config)
+  - [ ] POST /api/simulator/calculate
+  - [ ] GET /api/map
+  - [ ] GET /api/ai/insights
+- [ ] Criar `backend/package.json` e scripts de execução
+- [ ] Servir `public/index.html` via Express (rota `/`)
+- [ ] Atualizar o frontend:
+  - [ ] Trocar valores fixos por dados via `fetch()` das rotas
+  - [ ] Conectar simulador ao `POST /api/simulator/calculate`
+  - [ ] Manter Chart.js e alimentar gráficos via API
+- [ ] Rodar `npm install` e iniciar o servidor
+- [ ] Testar manualmente no navegador (troca de módulos e simulador)
