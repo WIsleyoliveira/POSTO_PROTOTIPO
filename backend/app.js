@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
 const jsonOk = (data) => ({ ok: true, data });
 
@@ -344,7 +344,7 @@ app.get('/api/ai/insights', (req, res) => {
 // (só relevante no modo "servidor único" local; na Vercel o estático
 // do frontend é servido separadamente pelo build estático)
 app.get(/^(?!\/api\/).*/, (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  res.sendFile(path.join(__dirname, '../frontend/dist', 'index.html'));
 });
 
 module.exports = app;
