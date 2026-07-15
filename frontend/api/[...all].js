@@ -5,8 +5,8 @@
 // Qualquer alteração nas rotas da API deve ser replicada aqui e em
 // backend/app.js (usado no modo de desenvolvimento local).
 
-const express = require('express');
-const cors = require('cors');
+import express from 'express';
+import cors from 'cors';
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -345,4 +345,4 @@ app.get('/api/ai/insights', (req, res) => {
 });
 
 
-module.exports = app;
+export default app;
